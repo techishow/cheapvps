@@ -1,0 +1,56 @@
+/* Section */
+body > .section {
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hero */
+body > .section .hero {
+  width: 300px;
+}
+@media only screen and (max-width: 767.98px) {
+  body > .section .hero {
+    width: 200px;
+  }
+}
+
+/* text */
+body > .section .title-1 {
+  font-size: 32px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+body.light-theme > .section .title-1 {
+  color: var(--dark);
+}
+body > .section .para-1 {
+  font-size: 16px;
+  color: var(--text-gray);
+}
+@media only screen and (max-width: 767.98px) {
+  body > .section .title-1 {
+    font-size: 20px;
+  }
+  body > .section .para-1 {
+    font-size: 14px;
+  }
+}
+
+/* links */
+body > .section .links a {
+  font-size: 14px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  color: var(--text-gray);
+  padding: 10px 15px;
+}
+body > .section .links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+body.light-theme > .section .links a:hover {
+  color: var(--dark);
+}
